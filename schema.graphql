@@ -1,0 +1,15 @@
+type Query {
+  regionById(Id: String!): Region
+  regions: [Region!]
+}
+
+type Region {
+  Id: ID
+  Name: String
+  Territories: [Territory!]
+}
+
+type Territory {
+  Code: String
+  Name: String
+}
